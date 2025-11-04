@@ -5,11 +5,15 @@
 ## 기능
 
 - 🌐 **인터넷 상태 모니터링**: 각 국가의 인터넷 장애 뉴스 수집
+- 📊 **인터넷 인프라 (Cloudflare Radar)**: 국가별 인터넷 인프라 상태 및 트래픽 이상 징후 감지
 - 🌦️ **날씨 특보**: 주요 도시의 날씨 경보/특보 알림
 - 🎉 **공휴일 확인**: 오늘/내일 예정된 공휴일 알림
 - ⚠️ **지진 정보**: 규모 4.5 이상 지진 정보
 - 📰 **주요 뉴스**: 각 국가 및 대륙별 주요 이슈 뉴스
-- 🤖 **AI 요약**: Gemini API를 사용한 종합 리포트 요약
+- 📈 **게임 트렌드 (Google Trends)**: 국가별 게임 관련 검색 트렌드 분석
+- 🎮 **게임 플랫폼 상태 (DownDetector)**: Steam, Epic Games, Xbox, PlayStation 등 주요 플랫폼 상태 모니터링
+- 🤖 **AI 요약**: OpenAI/Claude/Gemini를 사용한 종합 리포트 요약
+- ✅ **정보 교차 검증**: 여러 소스 간 정보 일치도 확인 및 신뢰도 평가
 
 ## 설정 방법
 
@@ -17,11 +21,15 @@
 
 GitHub 저장소의 **Settings > Secrets and variables > Actions**에서 다음 Secrets를 추가하세요:
 
-- `GEMINI_API_KEY`: Google Gemini API 키
+- `OPENAI_API_KEY`: (권장) OpenAI API 키 - 분석, 요약, 번역에 사용
+- `ANTHROPIC_API_KEY`: (권장) Claude API 키 - 심층 분석에 사용
+- `PERPLEXITY_API_KEY`: (권장) Perplexity API 키 - 실시간 웹 검색으로 뉴스 수집 보완
+- `GEMINI_API_KEY`: (선택사항) Google Gemini API 키 (위 API 없을 때 대체용)
 - `GNEWS_API_KEY`: GNews API 키
 - `WEATHERAPI_API_KEY`: WeatherAPI 키
 - `CALENDARIFIC_API_KEY`: Calendarific API 키
 - `SLACK_WEBHOOK_URL`: Slack Webhook URL
+- `CLOUDFLARE_API_KEY`: (선택사항) Cloudflare API 키 (무료 tier는 키 불필요)
 
 ### 2. Slack Webhook 설정
 
