@@ -8,12 +8,10 @@
 - 📊 **인터넷 인프라 (Cloudflare Radar)**: 국가별 인터넷 인프라 상태 및 트래픽 이상 징후 감지
 - 🌦️ **날씨 특보**: 주요 도시의 날씨 경보/특보 알림
 - 🎉 **공휴일 확인**: 오늘/내일 예정된 공휴일 알림
-- ⚠️ **지진 정보**: 규모 4.5 이상 지진 정보
-- 📰 **주요 뉴스**: 각 국가 및 대륙별 주요 이슈 뉴스
-- 📈 **게임 트렌드 (Google Trends)**: 국가별 게임 관련 검색 트렌드 분석
-- 🎮 **게임 플랫폼 상태 (DownDetector)**: Steam, Epic Games, Xbox, PlayStation 등 주요 플랫폼 상태 모니터링
-- 🤖 **AI 요약**: OpenAI/Claude/Gemini를 사용한 종합 리포트 요약
-- ✅ **정보 교차 검증**: 여러 소스 간 정보 일치도 확인 및 신뢰도 평가
+- ⚠️ **지진 정보**: 규모 6.0 이상 지진 정보
+- 📰 **주요 뉴스**: 각 국가 및 대륙별 주요 이슈 뉴스 (한글 번역)
+- 📈 **게임 트렌드 (Google Trends)**: 국가별 모바일 게임 트렌드 분석 (PUBG Mobile, Free Fire, Roblox, Delta Force)
+- 🤖 **AI 요약**: OpenAI/Claude/Gemini를 사용한 종합 리포트 요약 및 심층 분석
 
 ## 설정 방법
 
@@ -80,3 +78,16 @@ python send_report.py
 - `.github/workflows/send_report.yml`: GitHub Actions 워크플로우
 - `requirements.txt`: Python 의존성 패키지 목록
 
+## 주요 기능 설명
+
+### 한글 번역
+- 모든 뉴스가 자동으로 한글로 번역됩니다
+- 대륙별 뉴스와 국가별 상세 리포트의 뉴스가 한글로 표시됩니다
+
+### 모바일 게임 트렌드
+- PUBG Mobile, Free Fire, Roblox, Delta Force의 검색 트렌드를 모니터링합니다
+- 각 게임별 트렌드 변화율을 표시합니다
+
+### 정보 필터링
+- 특이사항이 없는 항목은 표시되지 않아 깔끔한 리포트를 제공합니다
+- 지진은 규모 6.0 이상만 표시됩니다
